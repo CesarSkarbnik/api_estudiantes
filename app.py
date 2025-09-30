@@ -38,7 +38,5 @@ def insert_estudiante():
     )
     db.session.add(nuevo_estudiante)
     db.session.commit()
-return jsonify({'msg': 'Estudiante agregado correctamente'})    
+    return jsonify({'msg': 'Estudiante agregado correctamente'})    
 
-if __name__ == '__main__':
-    app.run(debug=True)
